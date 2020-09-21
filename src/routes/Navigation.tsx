@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Menu, Image } from "semantic-ui-react";
 import cornerlogo from "../images/cornerlogo.png";
 
-
 import logout from "./logout";
 import { useOktaAuth } from "@okta/okta-react";
 

@@ -12,6 +12,7 @@ function HomePage() {
     const HomePageBody = () => {
     return (
         <div>
+          {/* <Navigation /> */}
           <HomeHeader />
           <HomeBody />
           <Footer />

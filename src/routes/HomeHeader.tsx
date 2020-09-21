@@ -22,14 +22,13 @@ function HomeHeader() {
                 <Container textAlign="center">
                 
                         <StyledButton
-                            
+                            href="/login"
                             animated="fade"
                             size="huge"
-                            href="#"
                         >
 
                         <Button.Content visible>Get Started</Button.Content>
-                        <Button.Content hidden>Install Extension</Button.Content>
+                        <Button.Content hidden>Log In</Button.Content>
                         
                     </StyledButton>
                
