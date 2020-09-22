@@ -1,0 +1,52 @@
+{
+  "name": "Job-Saver",
+  "manifest_version": 2,
+  "version": "0.0.16",
+  "description": "A Chrome extension that allows users to save job posts!",
+  "content_scripts": [
+    {
+      "js": [
+        "popup.js"
+      ],
+      "matches": ["http://*/*", "https://*/*"],
+      "css": [
+        "index.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "./images/icon16.png",
+      "24": "./images/icon24.png",
+      "32": "./images/icon32.png",
+      "48": "./images/icon48.png",
+      "128": "./images/icon128.png"
+    },
+    "default_title": "Job-Saver"
+  },
+  "icons": {
+    "16": "./images/icon16.png",
+    "24": "./images/icon24.png",
+    "32": "./images/icon32.png",
+    "48": "./images/icon48.png",
+    "128": "./images/icon128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "activeTab",
+    "https://job-saver-be.herokuapp.com/jobPosts/addJob",
+    "notifications"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-eIy+ZFmUSgAl2hneWuGKuPlIoZulI0x+WlWHlAkasAM='; object-src 'self'",
+  "web_accessible_resources": ["*.html", "*.png", "*.js", "*.css"],
+  "externally_connectable": {
+    "matches": ["https://www.getmeajob.me/*", "http://getmeajob.me/*"]
+  }
+}
+
